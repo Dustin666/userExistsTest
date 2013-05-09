@@ -1,5 +1,10 @@
 UserExistsTest::Application.routes.draw do
+  resources :exists
+
+
   resources :users
+  get "users/exist"
+  post "users/exist"
 
 
   # The priority is based upon order of creation:
